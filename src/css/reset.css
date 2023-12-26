@@ -20,6 +20,8 @@ ul {
 }
 
 a {
+  display: flex;
+  justify-content: start;
   color: currentColor;
   text-decoration: none;
 }
