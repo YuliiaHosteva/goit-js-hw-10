@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./2-snackbar.html" />
+    <link rel="stylesheet" href="./css/2-snackbar.css" />
 
     <title>Snackbar</title>
   </head>
@@ -13,8 +13,31 @@
     <a href="./index.html">Go to home</a>
 
     <section>
-     
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+      
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button type="submit">Create notification</button>
+      </form>
 
     </section>
+    <script type="module" src="./js/2-snackbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast"></script>
+  
+
   </body>
 </html>

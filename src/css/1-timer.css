@@ -1,4 +1,4 @@
-input {
+input[type="text"] {
 color: #2E2F42;
 font-family: Montserrat;
 font-size: 16px;
@@ -16,12 +16,14 @@ box-sizing: border-box;
 border-radius: 4px;
 background: #FFF;
 border: 1px solid #808080;
+}
 
+input[type="text"]:hover {
+border-color: #000000;
 }
 
 
-
-button {
+button[type="button"] {
 display: inline-flex;
 width: 75px;
 height: 40px;
@@ -35,23 +37,19 @@ padding: 8px 16px;
 border-radius: 8px;
 border-color: transparent;
 background: #4E75FF;  
-
 }
 
-button:not([disabled]):hover {
-    background: #6C8CFF;
-  }
+button[type="button"]:not([disabled]):hover {
+background: #6C8CFF;
+}
 
+button[type="button"]:disabled {
+background: #CFCFCF;
+color: #989898; 
+cursor: not-allowed;
+} 
 
-button:disabled {
-    background: #CFCFCF;
-    color: #989898; 
-    cursor: not-allowed;
-  } 
   
-  
-  
-    
 .timer {
 display: flex;
 align-content: center;
