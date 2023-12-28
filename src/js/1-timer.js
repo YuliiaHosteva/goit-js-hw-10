@@ -24,6 +24,7 @@ const options = {
       startButton.disabled = true;
     } else {
       startButton.disabled = false;
+      datetimePicker.disabled = false;
       userSelectedDate = selectedDate;
     }
   },
@@ -35,6 +36,7 @@ startButton.addEventListener("click", startTimer);
 
 function startTimer() {
   startButton.disabled = true;
+  datetimePicker.disabled = true;
   const intervalId = setInterval(() => {
     const timeLeft = calculateTimeLeft(userSelectedDate);
     updateTimer(timeLeft);

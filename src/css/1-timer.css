@@ -18,9 +18,23 @@ background: #FFF;
 border: 1px solid #808080;
 }
 
-input[type="text"]:hover {
+  
+input[type="text"]:not(:disabled):hover {
 border-color: #000000;
 }
+
+input[type="text"]:not(:disabled):active {
+border-color: #4E75FF;
+}
+
+input[type="text"]:disabled {
+/* Ваші стилі для неактивного інпута */
+color: #989898;
+background: #FAFAFA;
+border: 1px solid #CFCFCF;
+cursor: not-allowed;
+}
+  
 
 
 button[type="button"] {
@@ -43,6 +57,7 @@ button[type="button"]:not([disabled]):hover {
 background: #6C8CFF;
 }
 
+input[type="text"] +
 button[type="button"]:disabled {
 background: #CFCFCF;
 color: #989898; 
