@@ -1,6 +1,12 @@
+.timer-back {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+
 #datetime-picker {
 color: #2E2F42;
-font-family: Montserrat;
+font-family: Montserrat sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5; 
