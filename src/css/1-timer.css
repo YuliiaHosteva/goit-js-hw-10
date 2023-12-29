@@ -1,4 +1,4 @@
-input[type="text"] {
+#datetime-picker {
 color: #2E2F42;
 font-family: Montserrat;
 font-size: 16px;
@@ -19,15 +19,15 @@ border: 1px solid #808080;
 }
 
   
-input[type="text"]:not(:disabled):hover {
+#datetime-picker:not(:disabled):hover {
 border-color: #000000;
 }
 
-input[type="text"]:not(:disabled):active {
+#datetime-picker:not(:disabled):active {
 border-color: #4E75FF;
 }
 
-input[type="text"]:disabled {
+#datetime-picker:disabled {
 /* Ваші стилі для неактивного інпута */
 color: #989898;
 background: #FAFAFA;
@@ -35,8 +35,6 @@ border: 1px solid #CFCFCF;
 cursor: not-allowed;
 }
   
-
-
 button[type="button"] {
 display: inline-flex;
 width: 75px;
@@ -57,7 +55,6 @@ button[type="button"]:not([disabled]):hover {
 background: #6C8CFF;
 }
 
-input[type="text"] +
 button[type="button"]:disabled {
 background: #CFCFCF;
 color: #989898; 
@@ -98,13 +95,13 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5; 
 }
-input[type="number"] {
+/* input[type="number"] {
     display: flex;
-    /* width: 360px; */
+    width: 360px;
     height: 40px;
     box-sizing: border-box;
     margin-bottom: 30px;
-    /* margin-top: 8px; */
+    margin-top: 8px;
     border-radius: 4px;
     color: #2E2F42;
     font-family: Montserrat;
@@ -114,4 +111,4 @@ input[type="number"] {
     letter-spacing: 0.04em;
     padding: 8px 16px;
     border: 2px solid #808080;
-    }
+    } */

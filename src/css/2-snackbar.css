@@ -23,7 +23,7 @@ letter-spacing: 0.04em;
 
 }
 
-input[type="number"] {
+input[type="number"]  {
 display: flex;
 width: 360px;
 height: 40px;
